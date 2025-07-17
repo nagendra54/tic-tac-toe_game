@@ -96,15 +96,10 @@ def win_check(board, choice):
 
 def replay():
     return input('\nDo you want to play again? Enter [Y]es or [N]o: ').lower().startswith('y')
-
-# ============ MAIN PROGRAM ============ #
-
 print("Hii this is tic-tac-toe...")
 input("Press ENTER to start the game!")
-
 default()
 rules()
-
 while True:
     theBoard = [' '] * 10
     available = [str(num) for num in range(10)]
